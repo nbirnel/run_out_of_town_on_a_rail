@@ -1,0 +1,2 @@
+module OutlawsHelper
+end

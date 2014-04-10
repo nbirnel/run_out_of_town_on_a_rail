@@ -1,0 +1,45 @@
+<%= form_for(@outlaw) do |f| %>
+  <% if @outlaw.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@outlaw.errors.count, "error") %> prohibited this outlaw from being saved:</h2>
+
+      <ul>
+      <% @outlaw.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :nick %><br>
+    <%= f.text_field :nick %>
+  </div>
+  <div class="field">
+    <%= f.label :wanted_for %><br>
+    <%= f.text_area :wanted_for %>
+  </div>
+  <div class="field">
+    <%= f.label :back_story %><br>
+    <%= f.text_area :back_story %>
+  </div>
+  <div class="field">
+    <%= f.label :facial_hair %><br>
+    <%= f.text_field :facial_hair %>
+  </div>
+  <div class="field">
+    <%= f.label :how_punished %><br>
+    <%= f.text_field :how_punished %>
+  </div>
+  <div class="field">
+    <%= f.label :hat %><br>
+    <%= f.text_field :hat %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

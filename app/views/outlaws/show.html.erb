@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @outlaw.name %>
+</p>
+
+<p>
+  <strong>Nick:</strong>
+  <%= @outlaw.nick %>
+</p>
+
+<p>
+  <strong>Wanted for:</strong>
+  <%= @outlaw.wanted_for %>
+</p>
+
+<p>
+  <strong>Back story:</strong>
+  <%= @outlaw.back_story %>
+</p>
+
+<p>
+  <strong>Facial hair:</strong>
+  <%= @outlaw.facial_hair %>
+</p>
+
+<p>
+  <strong>How punished:</strong>
+  <%= @outlaw.how_punished %>
+</p>
+
+<p>
+  <strong>Hat:</strong>
+  <%= @outlaw.hat %>
+</p>
+
+<%= link_to 'Edit', edit_outlaw_path(@outlaw) %> |
+<%= link_to 'Back', outlaws_path %>
