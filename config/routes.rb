@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'welcome/hello'
+
   resources :outlaws, except: :destroy
 
   # The priority is based upon order of creation: first created -> highest priority.
