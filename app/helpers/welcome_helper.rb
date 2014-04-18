@@ -1,6 +1,8 @@
 module WelcomeHelper
   def salutation
-    if params[:hates_outlaws] == "yes"
+    if @likes_outlaws
+      "I knows you like you some outlaws."
+    else
       "You,
       Sir,
       with your high on your horse,
@@ -8,8 +10,6 @@ module WelcomeHelper
       outlaw-hatin' ways,
       can be gone. 
       And the horse you rode in on too!"
-    else
-      "I knows you like you some outlaws."
     end
   end
 end
