@@ -13,7 +13,13 @@
     </p>
 
     <p>
-    Wanna see some <a href="../outlaws">Outlaws</a>?
+    Wanna see some href <a href="../outlaws">Outlaws</a>?
+    <%= link_to 'No Thanks.', likes_outlaws: false %>
+    </p>
+
+    <p>
+    <%# Renée's more robust version from class %>
+    Wanna see some link_to <%= link_to 'Outlaws', outlaws_path %>?
     <%= link_to 'No Thanks.', likes_outlaws: false %>
     </p>
 
